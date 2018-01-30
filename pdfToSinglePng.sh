@@ -7,7 +7,7 @@ for fullName in *.pdf; do
     printf "==== split up and convert $fullName \n";
     printf "==== ====\n\n"
 
-    pdftk "$fullName" burst output "tmp/$plainName-%02d.pdf";
+    pdfseparate "$fullName" "tmp/$plainName-%02d.pdf"
     ls tmp/*.pdf | xargs -I '{}' sips -s format png '{}' --out '{}'.png
 
     printf "\n\n";

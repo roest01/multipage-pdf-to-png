@@ -9,12 +9,12 @@ It's written and tested on a mac but should be compatible for linux, too
 
 ## Requiements
 
-1. pdftk - [Download v2.02 - osx](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.6-setup.pkg)
+1. pdfseparate - (`brew install poppler` will also install `pdfseparate`)
 2. imagemagick convert - [download](https://www.imagemagick.org/script/download.php#macosx)
 
 
 #### Why such requiements?
-- pdftk split the pdf file
+- pdfseparate splits the pdf file
 - imagemagick convert it to png combine it back and crop existing whitespace
 
 
@@ -24,7 +24,7 @@ It's written and tested on a mac but should be compatible for linux, too
 3. Run ``./pdfToSinglePng.sh``
 
 .png files will be created beside .pdf files with the same filename
-each pdf page goes vertically upon the other with a spacing between each page.
+each pdf page goes vertically upon the other with a spacing between each page. Headers repeating every page.
 
 
 ## Demo
@@ -39,4 +39,6 @@ converted to
 - run script
 
 ## Any plans?
-It would be really cool if anyone can add parameters to this script. Maybe you have other ideas, making an alfred workflow ? Make the world better!
+It would be really cool if anyone can add parameters to this script.
+Maybe you have other ideas, e.g creating an alfred workflow ?
+Make the world better!
