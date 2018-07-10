@@ -1,3 +1,10 @@
+## Deprecation warning
+
+This repository is outdated.
+Please use node package [/mooz/node-pdf-image](https://github.com/mooz/node-pdf-image) as solution. This feature is integrated there.
+
+Even if there are no further plans with this repo, this script is still working and might be a good reference for your project.
+
 ## PDF to PNG converter
 
 This is a small and simple bash script which convert a single pdf document to a single png file. So whats the secret? This script supports multipage PDF documents and convert them to a **single png file**.
@@ -37,8 +44,3 @@ converted to
 - check out this repo
 - delete readme_demo.png
 - run script
-
-## Any plans?
-It would be really cool if anyone can add parameters to this script.
-Maybe you have other ideas, e.g creating an alfred workflow ?
-Make the world better!
